@@ -1,0 +1,9 @@
+#mylist{
+  list-style:none; 
+
+
+}
+.item{
+  display:flex;
+  justify-items:flex-end;
+}
