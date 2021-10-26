@@ -5,10 +5,11 @@ let ul =document.querySelector("#mylist");
 button.onclick =()=>{
     // let ul =document.querySelector("#mylist");
     // let text = document.querySelector("#input-text");
+    // <i class="fa fa-circle-thin" job ="complete"></i>
     ul.innerHTML+=`<li class="item">
-    <i class="fa fa-circle-thin" job ="complete"></i>
+    <button class="circle"><i class="fa fa.circle-thin"></i></button>
     <p class="text"> ${text.value}</p>
-    <button class="btn-trash"><i class="fa fa-trash"></i>delete</button>
+    <button class="btn-trash"><i class="fa fa-trash"></i></button>
 
 </li>`;
 text.value ="";
@@ -17,7 +18,11 @@ text.value ="";
      if (e.target.classList.contains("btn-trash")) {
          e.target.closest("li").remove();
      }
+     if (e.target.tagName === 'LI') {
+        e.target.classList.toggle('checked') ;
+     }
  })
+
 
 
 
