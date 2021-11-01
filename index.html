@@ -8,13 +8,18 @@
     <title>ToDo-list</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">>
     <link rel="stylesheet" href="index.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tangerine:wght@700&family=Titillium+Web:wght@300&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
+
     <div id="add-item">
         <h2>Öznur's To Do List</h2>
         <input id="input-text" type="text" placeholder="Enter what you will to do">
@@ -22,36 +27,28 @@
     </div>
     <div id="list-todo">
         <ul id="mylist">
-            <li class="item">
-                <!-- <i class="fa fa-circle-thin"></i> -->
-                <input type="checkbox" name="" class="check" />
-                <p class="text">Drink Water</p>
-                <button class="btn-trash"><i class="fa fa-trash"></i></button>
-           </li>
-               
-            <li class="item">
-                <i class="fa fa-circle-thin" job ="complete" id="0"></i>
-                <p class="text">Walk 30 min outside</p>
-                <button class="btn-trash"><i class="fa fa-trash"></i></button>
-            </li>
-            <li class="item">
-                <i class="fa fa-circle-thin" job ="complete" id="0"></i>
-                <p class="text">Cook</p>
-                <button class="btn-trash"><i class="fa fa-trash"></i></button>
-            </li>
-            <li class="item">
-                <i class="fa fa-circle-thin" job ="complete" id="0"></i>
-                <p class="text">Begin the new Project</p>
-                <button class="btn-trash"><i class="fa fa-trash"></i></button>
-            </li>
-            <li class="item">
-                <i class="fa fa-circle-thin"job ="complete" id="0"></i>
-                <p class="text">Drink coffee with yourself</p>
-                <button class="btn-trash"><i class="fa fa-trash"></i></button>
-            </li>
+
+            <li class="item"><input type="checkbox" name="" class="check" />Walk 30 min outside <button class="del"><i
+                        class="fa fa-trash delete"></i></button></li>
+
+
+            <li class="item"><input type="checkbox" name="" class="check" />Cook <button class="del"><i
+                        class="fa fa-trash delete"></i></button></li>
+
+
+            <li class="item"><input type="checkbox" name="" class="check" />Begin the new Projekt<button class="del"><i
+                        class="fa fa-trash delete"></i></button></li>
+
+            <li class="item"><input type="checkbox" name="" class="check" />Drink coffee with yourself<button class="del"><i
+                        class="fa fa-trash delete"></i></button></li>
+
+
+            
 
         </ul>
     </div>
+    </div>
+    <footer>hallo halli</footer>
     <script src="app.js"></script>
 </body>
 
